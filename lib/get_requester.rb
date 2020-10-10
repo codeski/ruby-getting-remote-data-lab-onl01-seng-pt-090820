@@ -30,7 +30,7 @@ end
     people = JSON.parse(self.get_response_body)
       people.collect do |people| 
         people["name"]
-        people["occupation]
+        people["occupation"]
       end
     
   end
