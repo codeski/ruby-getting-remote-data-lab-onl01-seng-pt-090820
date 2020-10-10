@@ -6,7 +6,7 @@ require 'pry'
 class GetRequester
   
   def initialize(url)
-    uri = URI.parse(url)
+   URI.parse(url)
   end
   
   
