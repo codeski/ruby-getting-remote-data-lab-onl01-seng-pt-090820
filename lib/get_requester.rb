@@ -5,9 +5,9 @@ require 'pry'
 
 class GetRequester
   
-  # def initialize(url)
-  #   URI.parse(URL)
-  # end
+  def initialize(url)
+    URI.parse(URL)
+  end
   
   
   def get_response_body
