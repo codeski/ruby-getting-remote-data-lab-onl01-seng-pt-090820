@@ -28,10 +28,10 @@ end
   def parse_json 
     uri = URI.parse(URL)
     people = JSON.parse(self.get_response_body)
-    hash = {}
+    # hash = {}
       people.collect do |people| 
-        hash[people] = "name"
-        # people["occupation"]
+        people["name"]
+        people["occupation"]
       end
     
   end
