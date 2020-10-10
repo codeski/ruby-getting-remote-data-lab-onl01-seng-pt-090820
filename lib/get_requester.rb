@@ -1,7 +1,11 @@
 require 'net/http'
-require 'json'
 require 'open-uri'
+require 'json'
 require 'pry'
+
+uri = URI.parse(url)
+response = Net::HTTP.get_response(uri)
+response.body
 
 
 
