@@ -29,8 +29,8 @@ end
     uri = URI.parse(URL)
     people = JSON.parse(self.get_response_body)
       people.collect do |people| 
-        people.name 
-        people.occupation
+        people["name"]
+        people["occupation]
       end
     
   end
