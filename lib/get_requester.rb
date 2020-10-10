@@ -3,9 +3,9 @@ require 'open-uri'
 require 'json'
 require 'pry'
 
-uri = URI.parse(url)
-response = Net::HTTP.get_response(uri)
-response.body
+# uri = URI.parse(url)
+# response = Net::HTTP.get_response(uri)
+# response.body
 
 
 
@@ -15,9 +15,9 @@ class GetRequester
   # URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
   
 def initialize(url)
-  # uri = URI.parse(url)
-  # response = Net::HTTP.get_response(uri)
-  # response.body
+  uri = URI.parse(url)
+  response = Net::HTTP.get_response(uri)
+  response.body
 end
   
   
