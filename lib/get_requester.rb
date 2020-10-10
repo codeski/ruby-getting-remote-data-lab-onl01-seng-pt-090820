@@ -17,8 +17,8 @@ class GetRequester
   end 
   
   def parse_json 
-    uri = URI.parse(URL)
-    people = JSON.parse(self.get_response_body)
+    # uri = URI.parse(URL)
+    JSON.parse(self.get_response_body)
   end
 
 end
