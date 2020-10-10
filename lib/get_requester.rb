@@ -27,7 +27,7 @@ end
   
   def parse_json 
     uri = URI.parse(URL)
-    programs = JSON.parse(self.get_resonse_body)
+    programs = JSON.parse(self.get_response_body)
     programs.collect do |program| 
       program["agency"]
     end 
