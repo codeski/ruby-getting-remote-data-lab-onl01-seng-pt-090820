@@ -16,8 +16,6 @@ class GetRequester
   
 def initialize(url)
   uri = URI.parse(url)
-  # response = Net::HTTP.get_response(uri)
-  # response.body
 end
   
   
@@ -27,18 +25,12 @@ end
     response.body
   end 
   
-#   def get_programs
-#   uri = URI.parse(URL)
-#   response = Net::HTTP.get_response(uri)
-#   response.body
-# end
-  
-#   def parse_json 
-#     uri = URI.parse(URL)
-#     programs = JSON.parse(self.get_resonse_body)
-#     programs.collect do |program| 
-#       program["agency"]
-#     end 
-#   end
+  def parse_json 
+    uri = URI.parse(URL)
+    programs = JSON.parse(self.get_resonse_body)
+    programs.collect do |program| 
+      program["agency"]
+    end 
+  end
 
 end
