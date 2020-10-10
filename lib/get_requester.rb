@@ -27,10 +27,12 @@ end
   
   def parse_json 
     uri = URI.parse(URL)
-    programs = JSON.parse(self.get_response_body)
-    programs.collect do |program| 
-      program["agency"]
-    end 
+    people = JSON.parse(self.get_response_body)
+      people.collect do |people| 
+        people.name 
+        people.occupation
+      end
+    
   end
 
 end
